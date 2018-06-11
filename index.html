@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>JavaScript 实现的简单AI五子棋游戏</title>
     <style>
         main .container{
             position: relative;
@@ -17,45 +17,14 @@
             height: 581px;
             cursor: pointer;
         }
-        .hint{
-            position: absolute;
-            left: 560px;
-            top: 150px;
-        }
-        .hint>div{
-            width: 100px;
-            height: 30px;
-            margin-bottom: 40px;
-            border: 1px solid #753a1c;
-            border-radius: 12px;
-            font-size: 18px;
-            color: #fbde9a;
-            background-color: #c28556;
-            line-height: 30px;
-            text-align: center;
-            user-select:none;
-            cursor: pointer;
-            box-shadow: 0 0 15px #753a1c;
-        }
-        .hint>div:hover{
-            background-color: #a36438;
-        }
     </style>
 </head>
 <body>
-<div id="header"></div>
 <main>
     <div id="container" class="container">
         <canvas id="myGame" width="681" height="581"></canvas>
-        <div class="hint">
-            <div class="double">双人对战</div>
-            <div class="black">AI执白子</div>
-            <div class="white">AI执黑子</div>
-            <div class="back">悔棋</div>
-        </div>
     </div>
 </main>
-<div id="footer"></div>
-<script src="js/build.js"></script>
+<script src="dist/bundle.js"></script>
 </body>
 </html>
