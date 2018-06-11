@@ -27,6 +27,7 @@ class Game  {
 
         //初始化一个棋盘
         this.chessboard = new Chessboard();
+        this.chessboard.init();
 
         //游戏中的信息
         this.gameInfo = new GameInfo();
@@ -183,4 +184,3 @@ class Game  {
     }
 }
 window.game = new Game;
-window.data = databus;
